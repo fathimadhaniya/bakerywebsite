@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import heroImg from "../assets/hero.jpg";
+import { menuItems } from "../data/menuItems";
 
 function Home() {
+    const bestSellers = menuItems.slice(0, 4);
   return (
+    <>
     <section
       className="hero d-flex align-items-center text-center text-white"
       style={{
@@ -21,6 +24,25 @@ function Home() {
         </Link>
       </div>
     </section>
+
+    <section className="container py-5">
+        <h2 className="text-center mb-4">Our Best Sellers</h2>
+        <div className="row g-4">
+          {bestSellers.map((item) => (
+            <div className="col-12 col-sm-6 col-lg-3" key={item.id}>
+              <div className="card h-100 text-center shadow-sm">
+                <div className="card-body">
+                  <div style={{ fontSize: "3rem" }}>{item.emoji}</div>
+                  <h5 className="card-title">{item.name}</h5>
+                  <p className="card-text">{item.description}</p>
+                  <p className="fw-bold">₹{item.price}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      </>
   );
 }
 
