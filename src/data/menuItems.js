@@ -1,3 +1,10 @@
+import cakeImg from "../assets/cake.jpg";
+import croissantImg from "../assets/croissant.jpg";
+import breadImg from "../assets/bread.jpg";
+import cookiesImg from "../assets/cookies.jpg";
+
+
+
 export const menuItems = [
   {
     id: 1,
@@ -5,7 +12,7 @@ export const menuItems = [
     price: 450,
     category: "Cakes",
     description: "Rich dark chocolate layers with creamy ganache.",
-    emoji: "🍰",
+    image:cakeImg,
   },
   {
     id: 2,
@@ -13,7 +20,7 @@ export const menuItems = [
     price: 60,
     category: "Pastries",
     description: "Flaky, golden and baked fresh every morning.",
-    emoji: "🥐",
+    image:croissantImg,
   },
   {
     id: 3,
@@ -21,7 +28,7 @@ export const menuItems = [
     price: 50,
     category: "Breads",
     description: "Soft, healthy loaf with no preservatives.",
-    emoji: "🍞",
+    image:breadImg,
   },
   {
     id: 4,
@@ -29,6 +36,6 @@ export const menuItems = [
     price: 120,
     category: "Cookies",
     description: "Crunchy outside, chewy inside. Box of 6.",
-    emoji: "🍪",
+    image:cookiesImg,
   },
 ];

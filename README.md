@@ -1,16 +1,51 @@
-# React + Vite
+🥐 Bakery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive bakery website built with React, Vite and Bootstrap as a practice project while learning the MERN stack.
 
-Currently, two official plugins are available:
+Tech Stack
+React (with Vite)
+React-Bootstrap / Bootstrap
+JavaScript, HTML, CSS
+Git & GitHub (branch-per-feature workflow with pull requests)
+Features
+Responsive navbar styled with Bootstrap
+Multiple pages: [Home, Menu, About, Contact – edit to match your pages]
+Product data kept in a separate data folder
+Reusable React components
+Project Structure
+bakerywebsite/
+├── public/
+└── src/
+    ├── assets/       # images and static files
+    ├── components/   # reusable UI components
+    ├── data/         # bakery items data
+    ├── pages/        # page components
+    ├── App.jsx
+    └── main.jsx
+Getting Started
+Clone the repository
+bash
+git clone https://github.com/fathimadhaniya/bakerywebsite.git
+cd bakerywebsite
+Install dependencies
+bash
+npm install
+Start the development server
+bash
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Then open the local URL shown in the terminal (usually http://localhost:5173).
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+What I Learned:
+Building a React app with Vite
+Structuring components, pages and data
+Styling with React-Bootstrap
+Using Git branches and pull requests
+Future Improvements:
+Connect a backend (Node.js, Express, MongoDB)
+Add a cart and ordering feature
+Author
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Fathima Dhaniya] GitHub: fathimadhaniya
